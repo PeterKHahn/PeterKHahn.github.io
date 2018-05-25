@@ -27,3 +27,24 @@ body {
   margin-top: 12px;
 
 }
+
+.header-link {
+  text-decoration: none;
+  color: black; 
+  
+}
+
+.header-link:visited {
+  text-decoration: none; 
+  color: black; 
+}
+
+
+.text-block {
+  width: 50%; 
+}
+
+.image {
+  height: 200px; 
+  width: 100%;
+}
