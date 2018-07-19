@@ -14,6 +14,9 @@ body {
 
 .intro {
   vertical-align: text-top;
+  font-size: 20px; 
+  font-weight: 100;
+  font-family: 'Titillium Web', sans-serif;
 
 }
 
@@ -48,12 +51,12 @@ body {
 }
 
 .header {
-  background-color: #999999; 
-  height: 200px;
+  background-color: #9fb8e0; 
+  height: 100px;
 }
 
 .header-button {
-  background-color: #dddddd; 
+  background-color: #6b96db; 
   width: 20%;
   height: 50px; 
   display: inline-block;
@@ -62,8 +65,17 @@ body {
   
 }
 
+.header-button-active {
+  background-color: #19468e; 
+  width: 20%;
+  height: 50px; 
+  display: inline-block;
+  text-align: center; 
+  box-sizing: border-box; 
+}
+
 .header-button:hover {
-  background-color: #aaaaaa; 
+  background-color: #19468e; 
 }
 
 .header-button-inner {
@@ -95,6 +107,8 @@ body {
   display: block; 
   margin-left: auto;
   margin-right: auto;
+  background-color: #eeeeee;
+
   
 }
 

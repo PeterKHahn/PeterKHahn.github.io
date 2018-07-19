@@ -3,22 +3,18 @@ import React, { Component } from 'react';
 import Header from './Header.jsx'
 import {Link, Route, Switch} from 'react-router-dom'
 
-
-
-
-
-
 class Main extends Component {
     
     render() {
         return(
             <div>
+                
                 <Switch>
-                    <Route exact path="/" component={HomeContent}/>
-                    <Route exact path="/experience" component={ExperienceContent}/>
-                    <Route exact path="/research" component={ResearchContent}/>
-                    <Route exact path="/projects" component={ProjectContent}/>
-                    <Route exact path="/other" component={OtherContent}/>
+                    <Route exact path={process.env.PUBLIC_URL + "/home"} component={HomeContent}/>
+                    <Route exact path={process.env.PUBLIC_URL + "/experience"} component={ExperienceContent}/>
+                    <Route exact path={process.env.PUBLIC_URL + "/research"} component={ResearchContent}/>
+                    <Route exact path={process.env.PUBLIC_URL + "/projects"} component={ProjectContent}/>
+                    <Route exact path={process.env.PUBLIC_URL + "/other"} component={OtherContent}/>
 
                 </Switch>
             </div>
@@ -297,7 +293,7 @@ class ArticleSnippet extends Component {
         return(
             <div className="article">
                 <div className="article-inner">
-                    <Link className="link" to={this.props.to}>
+                    <Link className="link" to={process.env.PUBLIC_URL + this.props.to}>
                         <div className="article-header-snippet">
                             <div className="article-title">{this.props.title}</div>
                             <div className="article-subtitle">{this.props.subtitle}</div>
