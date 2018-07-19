@@ -1,0 +1,75 @@
+Introduction
+------------
+
+I'm a Junior studying Computer Science at Brown University, expected to graduate in Spring 2020, with a BS in Computer Science, focusing on Artificial Intelligence and Software Engineering. During my time here, I have taken part in multiple software projects, on teams of varying size as well as on my own. In addition to software development, I have also done research in multiple areas of Computer Science. I am looking for Internships for the Summer of 2019, as well as positions in Software Engineering following my graduation in Spring of 2020.
+
+Being a scientist allows me to ask the right questions and find the best ways to answer them. Being an engineer allows me to take those answers and use them to solve problems. My experience as both a scientist and an engineer is integral to my problem solving and developer skills and will prove to be an asset in any team I join.
+
+When I am not developing or researching, I also have been part of the Computer Science Department Community at Brown. I was a Teaching Assistant for 2 courses, as well as a Consultant in our "Sunlab".
+
+
+
+NeoEducation
+------------
+
+NeoEducation is a personal project of mine that aims at my passion for learning. It is an educational tool that allows students to make note cards, which can then be prioritized, organized, and generalized for studying purposes. NeoEducation was designed with User Interface in mind, giving power to the student users.
+
+The project has a backend in Kotlin, using SQLite3 databases to store Note Card information. I use Jetbrain's Exposed database package for Kotlin to achieve proper databasing. Even though Exposed does have support for Data Access Objects, NeoEducation isn't as simple as a CRUD app. The way we store cards was designed to optimize for collaboration as well as cross chapter card sets. For example, George Washington is very relevant to the Revolutionary War, but also takes a very important role as the first President after the Constitution was founded. As a result, George Washington does not belong to a single set of flash cards, and this must be accounted for in my design. I resolved this using multiple join tables, which although makes the code slightly more complicated, allows for a much more powerful tool.
+
+The frontend is a multi-page React App, using Routers to get across different pages. As I mentioned before, the biggest challenge with this portion was creating a powerful user interface. From the card creation page, one can immediately notice that navigating is extremely simple. The user can navigate with tabs, and can immediately create another card without touching the mouse. Of course buttons exist for those who prefer it, but even then, the new card is automatically highlighted.
+
+
+The Hub
+-------
+
+The Hub was based on an idea I've had for a while, to consolidate all of the tasks I perform daily into a single page. The Hub was created specifically for me, to make my life easier, but as a software engineer, I couldn't help but to design it as if it were to be deployed as a web app to be used by all.
+
+The largest component of The Hub is based on a project I worked on during Hack at Brown 2017. I wanted to find a way to see what was being served at the dining halls at Brown University every day. Using the Brown Dining API, I was able to scrape data, parse out the information that I wanted, and served them from a Flask server in timed intervals.
+
+Because the purpose of this project was integration, I first wanted to make sure I could integrate my lunch plans with Google Calendar. The challenge here was finding a way to do it quickly and securely. In the early phases of the project, I created a Google Apps Script with a hidden passphrase entered to start the server. Because this was insecure, the original design was to have just write access to the calendar. After a bit of developing, I eventually learned and switched over to using Google OAuthentication. This method was not only more secure, but because it was tied directly into Google Calendar, it was significantly faster. The Hub went from communicating with a few minutes of latency to a few seconds. Because it was secure, I was also able to give my app read access to the calendar, so that I could list out my daily events. The frontend was developed as simple HTML/CSS as well as Javascript and jQuery. In addition to calendar integration, I also had integration with posts from Piazza and class announcements, as well as a notes section.
+
+
+Visual Neuroprosthesis
+----------------------
+
+IVidere: The Visual Neuroprosthesis is a device that can help people who are blind "see" through 3 dimensional audio queues received from a depth camera. The project had several components, a neural network that could classify objects in view range, a hand tracking programming that used Hidden Markov Models, a 3D sound player, and an acceleration tracker to detect movement. My role in this was to create a Central Architecture that allowed all of the components to be modularized and communicate efficiently and securely with others. The primary motivation for this was to allow for the design to be extensible, so that if new team members were to join with new ideas for components, they could write programs for it easily.
+
+The final product uses ZeroMQ and Google's Protobuf, the former being a distributive method to separate different components of software using a publish-subscribe pattern, while the latter is a serialization protocol. My job was to design a structure of publisher and subscriber relations that each component could be a part of. In addition to this, I was tasked with taking previous components of the project and integrating them into our new system, namely the hand tracking and acceleration programs. This part of the project was especially exciting, as we could take advantage of the new modularized design, and see how even programs written in different languages could communicate with each other.
+
+
+
+Project R.A.D.A.R.
+------------------
+
+Project R.A.D.A.R. is a top-down, multiplayer Battle Royale web-based game, where players find items with radars, and fight off each other in a king of the hill style battle. The game allows for 4 players to complete against themselves or against AI players.
+
+I was primarily a back-end developer for this project, but I made sure to invest myself into all the components of the game. My original tasks were to design the game engine and all game logic. The primary concern was to make sure that the game design was extensible, making sure that any idea that could be spawned in our creativity could be implemented into our project. I did this by abstracting out nearly every component of the game into an engine that could act independent from our design. This included making item, entity, and collision abstractions, so that when we needed to be creative, all it would take was a short, single, top-level Java class.
+
+My next concern was efficiency in communication. As the game board would grow, it would be increasingly inefficient to communicate between the frontend and backend. In addition, because each player would have access to information that they should not see, this made room for cheating or giving player insecure and unfair advantages. The way I solved this was through chunking, making sure only entities in the player's visible range would be communicated. This drastically improved performance, as the frontend would need to render only a fraction of what it used to, running in constant time as opposed to linear time.
+
+I also spent time working on the frontend, communicating through websockets and rendering using Javscript canvas. One of the larger improvements I made to the frontend was by using scaling to our advantage, which not only improved the user experience, but also allowed for fewer entities to be rendered by 75%.
+
+Like with many of my projects, my next focus was making sure the entire project was modularized. Using the observer pattern, I made sure that each team member could make changes to their own portions of the project without breaking anyone else's code. This was an excellent software decision, and saved us much trouble leading up to the project's completion.
+
+
+Formal Methods
+--------------
+
+
+
+
+Bootstrap
+---------
+
+
+
+Pyret
+-----
+
+
+TA
+--
+
+
+Sunlab
+------

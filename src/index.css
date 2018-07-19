@@ -4,9 +4,52 @@ body {
   font-family: sans-serif;
 }
 
+.portrait-photo {
+  
+  width: 25%; 
+  margin: 20px; 
+  border-style: solid; 
+  border-color: #888888;
+}
+
+.intro {
+  vertical-align: text-top;
+
+}
+
+.peter {
+  font-size: 48px; 
+}
+
+.study {
+  font-size: 28px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+
+}
+
+.school {
+  font-size: 28px; 
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+
+
+}
+
+.intro-text {
+  width: 60%;
+  box-sizing: border-box; 
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px; 
+
+
+  
+}
+
 .header {
   background-color: #999999; 
-  height: 300px;
+  height: 200px;
 }
 
 .header-button {
@@ -44,10 +87,7 @@ body {
   width: 50%; 
 }
 
-.image {
-  height: 200px; 
-  width: 100%;
-}
+
 
 .content {
   text-align: center; 
@@ -58,10 +98,112 @@ body {
   
 }
 
-.section {
+.info-section {
   margin-top: 30px; 
+  margin-bottom: 30px; 
+  
 }
 
 .subsection {
   margin-top : 10px; 
+}
+
+.subsection-title {
+  font-size: 30px; 
+}
+
+.subsection-content {
+  font-size: 20px; 
+  font-weight: 100;
+  margin-top: 10px; 
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+.article {
+  width: 40%;
+  box-sizing: border-box; 
+  display: inline-block;
+  vertical-align: text-top;
+
+
+
+}
+
+.article-inner {
+  margin: 10px; 
+  padding: 10px; 
+
+
+}
+
+.article-header {
+  background: linear-gradient(#bbbbbb, white);
+  
+
+}
+
+
+.article-header-snippet {
+  background: linear-gradient(#bbbbbb, white);
+  cursor:pointer; 
+  
+
+}
+
+.article-header-snippet:hover {
+  background: linear-gradient(#999999, white); 
+}
+.article-title {
+  font-size: 32px;
+  color: red;
+  border-color: black;
+
+  border-style:solid;
+  border-left: none; 
+  border-right:none;
+  border-bottom:none;
+
+}
+
+.link {
+  text-decoration: none;
+  color: black; 
+  background: inherit; 
+
+
+}
+
+.link:visited {
+  text-decoration: none;
+  color: inherit; 
+  background: inherit; 
+
+
+
+}
+.article-content {
+  font-size: 28px; 
+  font-weight: 100;
+
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+.sub-title {
+  font-size: 48px;
+  padding: 10px; 
+}
+
+.text-container {
+  text-align: left;
+  padding: 10px; 
+}
+
+body {
+  font-family: 'Arvo', serif;
+  
+  font-size: 15px;
+
 }
