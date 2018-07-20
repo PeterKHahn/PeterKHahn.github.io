@@ -17,11 +17,11 @@ class Header extends Component {
         return(
             <div className="header">
                 <div className="buttons">
-                    <HeaderButton text={"Home"} link="home" active={this.active("/")}/>
-                    <HeaderButton text={"Experience"} link="experience" active={this.active("/experience")}/>
-                    <HeaderButton text={"University Research"} link="research" active={this.active("/research")}/>
-                    <HeaderButton text={"Independent Projects"} link="projects" active={this.active("/projects")}/>
-                    <HeaderButton text={"Other"} link="other" active={this.active("/other")}/>
+                    <HeaderButton text={"Home"} link="/home" active={this.active("/")}/>
+                    <HeaderButton text={"Experience"} link="/experience" active={this.active("/experience")}/>
+                    <HeaderButton text={"University Research"} link="/research" active={this.active("/research")}/>
+                    <HeaderButton text={"Independent Projects"} link="/projects" active={this.active("/projects")}/>
+                    <HeaderButton text={"Other"} link="/other" active={this.active("/other")}/>
                 </div>
             </div>
         )

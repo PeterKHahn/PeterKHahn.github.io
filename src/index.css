@@ -5,6 +5,10 @@ body {
   background: #0f0f5f
 }
 
+.icon {
+  margin: 5px; 
+}
+
 .portrait-photo {
   
   width: 25%; 
