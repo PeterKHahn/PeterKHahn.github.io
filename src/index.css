@@ -57,11 +57,9 @@ body {
 
 .header {
   background-color: #fffcf9; 
-  border-style: solid; 
-  border-top:none; 
-  border-left:none; 
-  border-right: none; 
-  border-color: #000000;
+  border-bottom-style: solid;
+
+  border-bottom-color: #000000;
   border-width: 2px; 
 }
 
@@ -81,12 +79,11 @@ body {
 
 .header-button-active {
 
-  border-color: #19468e; 
-  border-width: 8px; 
-  border-style:solid; 
-  border-top: none; 
-  border-left: none; 
-  border-right: none; 
+  border-bottom-color: #19468e; 
+
+  border-bottom-style: solid; 
+
+  border-bottom-width: 8px; 
 
   width: 20%;
   height: 50px; 
@@ -96,12 +93,10 @@ body {
 }
 
 .header-button:hover {
-  border-color: #19468e; 
-  border-width: 8px; 
-  border-style:solid; 
-  border-top: none; 
-  border-left: none; 
-  border-right: none; 
+  border-bottom-color: #19468e; 
+  border-bottom-style: solid; 
+  border-bottom-width: 8px; 
+
 }
 
 .header-button-inner {
@@ -183,12 +178,10 @@ body {
 .article-title {
   font-size: 32px;
   color: red;
-  border-color: black;
+  border-bottom-color: black;
 
-  border-style:solid;
-  border-left: none; 
-  border-right:none;
-  border-top:none;
+  border-bottom-style:solid;
+
   margin-bottom: 3px; 
 
 
@@ -198,12 +191,10 @@ body {
 .article-header-snippet {
  /* background: linear-gradient(#bbbbbb, #eeeeee);*/
   cursor:pointer; 
-  border-color: #dddddd;
+  border-bottom-style: solid; 
+  border-bottom-color: #dddddd;
 
-  border-style:none;
-  border-left: none; 
-  border-right:none;
-  border-top:none;
+
   
 }
 
