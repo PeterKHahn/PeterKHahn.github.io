@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #0f0f5f
 }
 
 .portrait-photo {
@@ -51,12 +52,21 @@ body {
 }
 
 .header {
-  background-color: #9fb8e0; 
-  height: 100px;
+  background-color: #fffcf9; 
+  border-style: solid; 
+  border-top:none; 
+  border-left:none; 
+  border-right: none; 
+  border-color: #000000;
+  border-width: 2px; 
+}
+
+.buttons {
+  width: 60%; 
+  margin: auto; 
 }
 
 .header-button {
-  background-color: #6b96db; 
   width: 20%;
   height: 50px; 
   display: inline-block;
@@ -66,7 +76,14 @@ body {
 }
 
 .header-button-active {
-  background-color: #19468e; 
+
+  border-color: #19468e; 
+  border-width: 8px; 
+  border-style:solid; 
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+
   width: 20%;
   height: 50px; 
   display: inline-block;
@@ -75,7 +92,12 @@ body {
 }
 
 .header-button:hover {
-  background-color: #19468e; 
+  border-color: #19468e; 
+  border-width: 8px; 
+  border-style:solid; 
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
 }
 
 .header-button-inner {
@@ -136,14 +158,16 @@ body {
 
 
 .article {
-  width: 40%;
+  width: 80%;
   box-sizing: border-box; 
   display: inline-block;
   vertical-align: text-top;
+  text-align: left; 
 
 
 
 }
+
 
 .article-inner {
   margin: 10px; 
@@ -152,23 +176,6 @@ body {
 
 }
 
-.article-header {
-  background: linear-gradient(#bbbbbb, white);
-  
-
-}
-
-
-.article-header-snippet {
-  background: linear-gradient(#bbbbbb, white);
-  cursor:pointer; 
-  
-
-}
-
-.article-header-snippet:hover {
-  background: linear-gradient(#999999, white); 
-}
 .article-title {
   font-size: 32px;
   color: red;
@@ -177,7 +184,38 @@ body {
   border-style:solid;
   border-left: none; 
   border-right:none;
-  border-bottom:none;
+  border-top:none;
+  margin-bottom: 3px; 
+
+
+}
+
+
+.article-header-snippet {
+ /* background: linear-gradient(#bbbbbb, #eeeeee);*/
+  cursor:pointer; 
+  border-color: #dddddd;
+
+  border-style:none;
+  border-left: none; 
+  border-right:none;
+  border-top:none;
+  
+}
+
+.article-header-snippet:hover {
+  
+}
+
+
+
+.article-snippit {
+  width: 40%;
+  box-sizing: border-box; 
+  display: inline-block;
+  vertical-align: text-top;
+  text-align: left; 
+
 
 }
 
@@ -204,7 +242,13 @@ body {
   font-family: 'Titillium Web', sans-serif;
 
 }
+.article-snippit-content {
+  font-size: 28px; 
+  font-weight: 100;
 
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center; 
+}
 .sub-title {
   font-size: 48px;
   padding: 10px; 
