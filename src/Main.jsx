@@ -70,6 +70,8 @@ class HomeContent extends Component {
                             <div className="school">Brown University Class of 2020</div>
                             <a className="icon" href={"https://github.com/PeterKHahn/"}><img src="github32.png" /></a>
                             <a className="icon" href={"https://www.linkedin.com/in/peterkhahn/"}><img src="linkedin34.png" /></a>
+                            <div>Email: peter_hahn@brown.edu</div>
+                            <a href="resume.pdf">Click here for my Resume</a>
 
 
                             <p>
@@ -167,20 +169,42 @@ class ExperienceContent extends Component {
         const radar = (
             <div> 
                 <p>
-                    Project R.A.D.A.R. (Really Awesome Design, and Radars), is a multiplayer online real-time game, inspired by the .io genre of games. The project is web based, having a frontend using jQuery/Javascript HTML/CSS as well as a backend in Java. 
+                    Project R.A.D.A.R. (Really Awesome Design, and Radars), is a multiplayer online real-time game, inspired by 
+                    the .io genre of games. The project is web based, having a frontend using jQuery/Javascript HTML/CSS as well
+                     as a backend in Java. 
                 </p>
                 <p>
-                    As the backend developer, I worked on the game engine, logic, and system architecture of the project. I worked on this project with 3 other team members, so it was very important to keep each of our components modularized, keeping to the principles of encapsulation and object oriented programming. I designed an architecture and API for each section, so that none of our individual components of the project needed to know the individual implementation of the other components. This way, the artificial intelligence portion could be designed without having specific knowledge of the game, and the frontend could render without knowing what was going on in the backend.
+                    As the backend developer, I worked on the game engine, logic, and system architecture of the project. I worked 
+                    on this project with 3 other team members, so it was very important to keep each of our components modularized,
+                     keeping to the principles of encapsulation and object oriented programming. I designed an architecture and API 
+                     for each section, so that none of our individual components of the project needed to know the individual implementation
+                      of the other components. This way, the artificial intelligence portion could be designed without having
+                       specific knowledge of the game, and the frontend could render without knowing what was going on in the backend.
                 </p>
                 <p>
-                    My main role was the design of the backend and game engine. Creating the engine was a challenge, because I wanted to construct an engine that would allow for as much creativity and extensibility as possible. If at some point in the future we wanted to add new game features, or even make an entirely different game, I wanted to make sure that the engine would be able to support the changes. The end product had it so that in order to add new features to the game, the only thing that needed to be done was to create a single top-level class, since nearly all the low-level functionality was hidden away in the engine.
+                    My main role was the design of the backend and game engine. Creating the engine was a challenge, because I wanted 
+                    to construct an engine that would allow for as much creativity and extensibility as possible. If at some point in 
+                    the future we wanted to add new game features, or even make an entirely different game, I wanted to make sure that
+                     the engine would be able to support the changes. The end product had it so that in order to add new features to 
+                     the game, the only thing that needed to be done was to create a single top-level class, since nearly all the low-level
+                      functionality was hidden away in the engine.
                 </p>
                 <p>
-                    To optimize efficiency, there were two things that I did. First off, I created a chunking system, dividing the map into small sections so that any individual players would only receive knowledge of surrounding objects, instead of the whole board. Primarily, this was a decision made because having access to information outside of the player's range of sight (even if we don't render it) can give them an unfair advantage. In addition, chunking would provide an efficiency boost. Having a large game board meant that that the number of entities on the board would increase quadratically with the length of the board. This made if very hard to make the game scalable. However, chunking allowed me to set this essentially to a constant time operation. Secondly, I changed the way we rendered things. Allowing a zoom functionality allowed us to control the amount that was being rendered on the screen. This scaling feature was not only nice for presentations, but also meant that we could control visuals and rendering in the frontend without changing anything in the backend, which of course led to an increased rendering efficiency by 75%.
+                    To optimize efficiency, there were two things that I did. First off, I created a chunking system, dividing 
+                    the map into small sections so that any individual players would only receive knowledge of surrounding objects, 
+                    instead of the whole board. Primarily, this was a decision made because having access to information outside of 
+                    the player's range of sight (even if we don't render it) can give them an unfair advantage. In addition, chunking 
+                    would provide an efficiency boost. Having a large game board meant that that the number of entities on the board would 
+                    increase quadratically with the length of the board. This made if very hard to make the game scalable. However,
+                     chunking allowed me to set this essentially to a constant time operation. Secondly, I changed the way we rendered things.
+                      Allowing a zoom functionality allowed us to control the amount that was being rendered on the screen. This scaling 
+                      feature was not only nice for presentations, but also meant that we could control visuals and rendering in the frontend 
+                      without changing anything in the backend, which of course led to an increased rendering efficiency by 75%.
 
                 </p>
                 <p> 
-                     Project R.A.D.A.R. was one of my first large scale team projects, and although I was told integration would be difficult, I am very proud of how our modularized model of the software allowed us to cleanly integrate our parts to create our final project.
+                     Project R.A.D.A.R. was one of my first large scale team projects, and although I was told integration would be difficult, 
+                     I am very proud of how our modularized model of the software allowed us to cleanly integrate our parts to create our final project.
 
                 </p>
             </div>
@@ -189,14 +213,32 @@ class ExperienceContent extends Component {
         const ividere = (
             <div> 
                 <p>
-                    iVidere is a Visual Prosthesis, to help people who are blind understand their surroundings using auditory queues, fueled by a neural network, an accelerometer, and 3D cameras. Most importantly, iVidere is cost efficient, and designed to be continuously improved, unlike other more expensive and single purpose devices. I first learned about this project in freshman year, and I have worked with them since. Because it is a project created by students, it is very important in the design to make sure that each component is modularized, so that when the current members of the team graduate, others can still continue to contribute to the project. This is where I came in, as my role was to find a way to model the software so that new components can be easily added, in a way that would work with different programming languages, so that anyone could work on the project.
+                    iVidere is a Visual Prosthesis, to help people who are blind understand their surroundings using auditory queues,
+                     fueled by a neural network, an accelerometer, and 3D cameras. Most importantly, iVidere is cost efficient, and
+                      designed to be continuously improved, unlike other more expensive and single purpose devices. I first learned
+                       about this project in freshman year, and I have worked with them since. Because it is a project created by 
+                       students, it is very important in the design to make sure that each component is modularized, so that when 
+                       the current members of the team graduate, others can still continue to contribute to the project. This is 
+                       where I came in, as my role was to find a way to model the software so that new components can be easily 
+                       added, in a way that would work with different programming languages, so that anyone could work on the project.
                 </p>
                 <p> 
-                    ZeroMQ is a distributed messaging system, that uses a publish-subscribe (pubsub) pattern to serially communicate with different components of a piece of software. Protobuf is Google's Protocol Buffer mechanism, allowing for different programs to communicate through serialization. The decision to use these components mirrored exactly our goals. Protobuf is language neutral, so that each component can be written in whichever language the developer most prefers. The project currently contains code in Python, Java, and C++, which all integrate with each other seamlessly. The choice to use ZeroMQ was made because it meant that each component could simply perform its process and publish it completely independently. Any other components who needed data from a published component could then simply subscribe to its messages, without ever needing to understand the workings of any other component.
+                    ZeroMQ is a distributed messaging system, that uses a publish-subscribe (pubsub) pattern to serially communicate 
+                    with different components of a piece of software. Protobuf is Google's Protocol Buffer mechanism, allowing for 
+                    different programs to communicate through serialization. The decision to use these components mirrored exactly 
+                    our goals. Protobuf is language neutral, so that each component can be written in whichever language the 
+                    developer most prefers. The project currently contains code in Python, Java, and C++, which all integrate with 
+                    each other seamlessly. The choice to use ZeroMQ was made because it meant that each component could simply 
+                    perform its process and publish it completely independently. Any other components who needed data from a 
+                    published component could then simply subscribe to its messages, without ever needing to understand the workings
+                     of any other component.
 
                 </p>
                 <p>
-                    After this decision was made to convert to a ZeroMQ and Protobuf system, I was then able to integrate the old components. I primarily worked with the 3D camera and hand tracking software as well as accelerometer code to make sure it could integrate with our system. After a short while of dealing with file dependencies, I was able to get my code to work with the preexisting code, successfully implementing the pubsub system. 
+                    After this decision was made to convert to a ZeroMQ and Protobuf system, I was then able to integrate the 
+                    old components. I primarily worked with the 3D camera and hand tracking software as well as accelerometer 
+                    code to make sure it could integrate with our system. After a short while of dealing with file dependencies, 
+                    I was able to get my code to work with the preexisting code, successfully implementing the pubsub system. 
                 </p>
             </div>
         )
@@ -204,9 +246,16 @@ class ExperienceContent extends Component {
         return(
             <div>                
                 <Header active="/experience"/>
-                <div></div>
                 <div className="content">
+                    <div className="page-title">Experience</div>
+
                     <div className="section">
+                        <div className="page-intro">
+                            <div className="page-intro-content">
+                                Throughout the summer or during the school year, I have contributed to various projects involving programming 
+                                and software engineering. This section highlights some of my experiences working on a team on larger scale projects. 
+                            </div>
+                        </div>
                         <div>
                             <Article 
                                 title={"Project R.A.D.A.R."} 
@@ -302,13 +351,14 @@ class ResearchContent extends Component {
             <div>                
                 <Header active="/research"/>
                 <div className="content">
-                    <div>
-                        At Brown, I've always found time to contribute
-                        to research projects. I worked with Brown's Programming 
-                        Language Team under multiple professors. I have designed software 
-                        ranging from databasing, scripting, and statistical analysis, aimed to 
-                        aid research in a variety of topics, including model finders, 
-                        programming languages, and computer science education. 
+                    <div className="page-title">University Research</div>
+
+                    <div className="page-intro">
+                        <div className="page-intro-content">
+                            Some of my largest contributions and experiences have been as a researcher. I was part of the Programming Languages Team at 
+                            Brown University, where I worked on subjects such as Formal Methods, Computer Science Education, and Programming Languages. 
+                            Being a researcher helped me understand how to ask the right questions and how to find answers and solutions to those questions. 
+                        </div>
                     </div>
                     <div className="section">
                         <div>
@@ -441,11 +491,14 @@ class ProjectContent extends Component {
             <div>                
                 <Header active="/projects"/>
                 <div className="content">
-                    <div>
-                        I have worked on a variety of projects, both my own and on teams. 
-                        Although working on a team allows for very large scale projects, 
-                        I am proud of the work I have done independently, because of the 
-                        skills necessary to understand the workings of my program at all levels. 
+                <div className="page-title">Independent Projects</div>
+
+                    <div className="page-intro">
+                        <div className="page-intro-content">
+                            As much as I love working on teams, when I am working on independent projects, I learn so much about so many 
+                            different levels of software. It gives me the opportunity to work on both the frontend and the backend of software, 
+                            as well as control of the entire design process. 
+                        </div>
                     </div>
                     <div className="section">
                         <div>
@@ -522,6 +575,16 @@ class OtherContent extends Component {
                 <div className="content">
 
                     <div className="section">
+                    <div className="page-title">Other Contributions</div>
+
+                        <div className="page-intro">
+                            <div className="page-intro-content">
+                                Outside of projects and research, I also do many other things related to the field of Computer Science. 
+                                I participate in hackathons, coding challenges, I designed this website, as well as other smaller projects. 
+                                However, my biggest time commitment in the Computer Science Department at Brown University is being a 
+                                Teaching Assisstant as well as a Sunlab Consultant at our largest computer lab. 
+                            </div>
+                        </div>
                         <div>
                             <Article title={"Computer Science Teaching Assistant"} content={ta}/>
                         </div>

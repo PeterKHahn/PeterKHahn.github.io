@@ -263,6 +263,25 @@ body {
   padding: 10px; 
 }
 
+.page-title {
+  font-size: 48px; 
+  padding: 15px; 
+}
+.page-intro {
+    margin: auto; 
+    align-content: center; 
+    width: 80%;
+    padding: 10px; 
+
+}
+
+.page-intro-content {
+  text-align: left; 
+  font-size: 20px; 
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
 body {
   font-family: 'Arvo', serif;
   
