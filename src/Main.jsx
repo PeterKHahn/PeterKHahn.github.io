@@ -71,7 +71,7 @@ class HomeContent extends Component {
                             <a className="icon" href={"https://github.com/PeterKHahn/"}><img src="github32.png" /></a>
                             <a className="icon" href={"https://www.linkedin.com/in/peterkhahn/"}><img src="linkedin34.png" /></a>
                             <div>Email: peter_hahn@brown.edu</div>
-                            <a href="resume.pdf">Click here for my Resume</a>
+                            <a href="https://drive.google.com/file/d/1wiQezv3gsoHGehdpNdQ-CliMyYf-R9v2/view?usp=sharing">Click here for my Resume</a>
 
 
                             <p>
